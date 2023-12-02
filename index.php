@@ -75,6 +75,7 @@ include('funcao.php');
             color: red;
         }
       </style>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
       <body>
         <form action="pagina.php" method="GET">
@@ -154,4 +155,5 @@ include('funcao.php');
       <h8> Agora irei a mimir pois estou  </h8>
       <h8> com deveras sono potente :) </h8>
       </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
       </html>
