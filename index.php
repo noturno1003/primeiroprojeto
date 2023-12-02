@@ -1,84 +1,89 @@
+<?php
+include('funcao.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>primeira criação</title>
-
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <?php echo head(); ?>
      <style>
 
-     body {background-image: url('https://i.pinimg.com/originals/fd/fe/94/fdfe94c7bdd0bf4afdd830e0b2c515e9.gif');
-     background: cover auto;
-     background-position: center auto;
-     width: 90vw;
-     height: 250vh;}
+        <?php echo bodyBackground('https://i.pinimg.com/236x/51/90/53/519053524f837c17df08d14a797701d6.jpg'); ?>
 
-      p {
-          color: white;
-          margin-top:10vh;
-          font-size:30px;
-     }
-      
-      h1 {
-          color: red;
-          margin-left: 25px;
-          margin-top: 20vh;
-      }
+        p {
+            color: white;
+            margin-top:10vh;
+            font-size:30px;
+        }
+        
+        h1 {
+            color: red;
+            margin-left: 25px;
+            margin-top: 20vh;
+        }
 
-      h2 {
-          color: white;
-          margin-left: 25px;
-          font-size: 30px;
-     }
+        h2 {
+            color: white;
+            margin-left: 25px;
+            font-size: 30px;
+        }
 
-      h3 {
-          color: white;
-          margin-left: 35px;
-          font-size: 40px;
-     } 
+        h3 {
+            color: white;
+            margin-left: 35px;
+            font-size: 40px;
+        } 
 
-      h4 {
-          font-size: 60px;
-          color: gray;
-          margin-left: 300px;
-     }
+        h4 {
+            font-size: 60px;
+            color: gray;
+            margin-left: 300px;
+        }
 
-      h7 {
-          color: red;
-          font-size: 100px;
-          margin-left: 350px;
-     }
+        h7 {
+            color: red;
+            font-size: 100px;
+            margin-left: 350px;
+        }
 
-      h8 {
-          color: pink;
-          font-size: 70px;
-          margin-left: 285px;
-     }
+        h8 {
+            color: pink;
+            font-size: 70px;
+            margin-left: 285px;
+        }
+        img {
+        max-width: 100%;
+        height: 350px;
+        display: block;
+        margin: 0 auto;
+        }
 
-      img {
-      max-width: 100%;
-      height: 350px;
-      display: block;
-      margin: 0 auto;
-     }
-
-      .contenedor-com-imagem {
-      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIdp_KogRiXR-PfNAv212r2bjTaFSfpAtAg&usqp=CAU');
-      background-size: cover;
-      background-position: center 110vh;
-     }
-
+        .contenedor-com-imagem {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIdp_KogRiXR-PfNAv212r2bjTaFSfpAtAg&usqp=CAU');
+        background-size: cover;
+        background-position: center 110vh;
+        }
+        input {
+            margin: 5px;
+        }
+        .verde {
+            color:aqua;
+        }
+        .gigante {
+            font-size: 40px;
+        }
+        .vermelha {
+            color: red;
+        }
       </style>
-      </head>
+    </head>
       <body>
-    
-
-      <header>
-      <h7>Bem Vindo  </h7>
-      <h8>essa é uma página para teste</h8> 
+        <form action="pagina.php" method="GET">
+            <label>Seu nome:</label><input type="text" name="nomecandidato"><br/>
+            <label>Sua idade:</label><input type="text" name="idadecandidato"><br/>
+            <input type="submit" value="cadastrar">
+        </form>
+      <h6 class="gigante vermelha">Bem Vindo  </h6>
+      <p class="verde">essa é uma página para teste<p> 
       <h2>estou testando uma parte chamada "background" que se resume no fundo da tela, estou praticando 
       com alguns gifs e imagens de fundo mas ainda não aprendi a configurar direito.</h2>
 
