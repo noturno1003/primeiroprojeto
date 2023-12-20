@@ -64,9 +64,9 @@
      <h1>Bem vindo! Faça o login para acessar:</h1>
 
             <form class= 'cadastro' action="conteudo.php" method="GET">
-            <label>e-mail:</label><input type="email" name="nomecandidato"><br/>
+            <label>e-mail:</label><input type="email" name="nomecandidato" required><br/>
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
+            <input type="password" id="senha" name="senha" required>
             </form>
             <form class= 'cadastro'>
             <input type="checkbox" id="mostrarSenha"> Mostrar senha <br/>
@@ -82,6 +82,7 @@
 
 
 
+            
 
     </header>
 
